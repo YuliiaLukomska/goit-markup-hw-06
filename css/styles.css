@@ -721,6 +721,57 @@ button {
   fill: #f4f4fd;
 }
 
+/* Mobile menu */
+
+.mobile-menu-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 72px 16px 40px;
+  background-color: #fff;
+}
+.mobile-menu-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.mobile-menu-list {
+  margin-bottom: 168px;
+}
+.mobile-menu-item {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-contacts-item {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+
 /* Tablet screen */
 
 @media screen and (min-width: 768px) {
