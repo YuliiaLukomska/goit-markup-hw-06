@@ -727,8 +727,17 @@ button {
   position: fixed;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 16px 40px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-container.is-open {
+  transform: translateX(0%);
 }
 .mobile-menu-button {
   position: absolute;
@@ -738,7 +747,7 @@ button {
   width: 24px;
   border-radius: 50%;
   border: none;
-  background-color: #e7e9fc;
+  background-color: #f4f4fd;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -746,30 +755,40 @@ button {
   padding: 0;
 }
 .mobile-menu-list {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
-.mobile-menu-item {
+.mobile-menu-link {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+.mobile-menu-link.current {
+  color: #404bbf;
+}
+
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
-.mobile-contacts-item {
+.mobile-contacts-link {
   color: #434455;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.mobile-contacts-link.current {
+  color: #4d5ae5;
+}
 .mobile-contacts-item:not(:last-child) {
   margin-bottom: 24px;
 }
 .mobile-menu-contacts {
   margin-bottom: 48px;
+}
+.mobile-menu-icons {
+  justify-content: space-between;
 }
 
 /* Tablet screen */
