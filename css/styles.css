@@ -842,9 +842,35 @@ button {
   .fourth-section-list {
     width: calc((100% - 48px) / 3);
   }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+  .footer-flex-cont {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+  }
+  .logo-footer {
+    margin-bottom: 16px;
+  }
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+  .footer-form {
+    margin-left: auto;
+  }
+  .footer-form-input {
+    line-height: 1.5;
+    width: 264px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-flex-cont {
     padding-left: 108px;
     padding-right: 108px;
