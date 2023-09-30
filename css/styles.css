@@ -72,7 +72,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  margin-right: 120px;
 }
 .logo-header-accent {
   color: #2e2f42;
@@ -118,12 +119,16 @@ button {
 }
 .address-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  /* gap: 40px; */
+  gap: 12px;
 }
 .address-link {
   color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
+  /* font-size: 16px; */
+  font-size: 12px;
+  /* line-height: 1.5; */
+  line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -131,6 +136,18 @@ button {
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
+}
+
+.header-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 /* Main */
@@ -778,6 +795,9 @@ button {
     justify-content: center;
     align-items: center;
   }
+  .header-button {
+    display: none;
+  }
 }
 
 /* Desktop screen */
@@ -868,11 +888,34 @@ button {
     line-height: 1.5;
     width: 264px;
   }
+  .logo-header {
+    margin-right: 76px;
+  }
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
   .footer-flex-cont {
     padding-left: 108px;
     padding-right: 108px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .nav-menu {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+  .logo-header {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
