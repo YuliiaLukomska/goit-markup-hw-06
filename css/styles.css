@@ -163,7 +163,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-section-bg-people-office.jpg);
+    url(../images/hero-section/hero-bg_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -171,6 +171,18 @@ button {
   max-width: 320px;
   margin: 0 auto;
 }
+
+@media screen and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/hero-bg_mob@2x.jpg);
+  }
+}
+
 .first-section-header {
   color: #ffffff;
   text-align: center;
@@ -868,6 +880,26 @@ button {
   .header-button {
     display: none;
   }
+  .first-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/hero-bg_tab.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/hero-bg_tab@2x.jpg);
+  }
 }
 
 /* Desktop screen */
@@ -968,6 +1000,26 @@ button {
   .address-link {
     font-size: 16px;
     line-height: 1.5;
+  }
+  .first-section {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/hero-bg_desk.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-section/hero-bg_desk@2x.jpg);
   }
 }
 
