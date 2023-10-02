@@ -988,4 +988,8 @@ button {
     margin-top: 16px;
     margin-bottom: 16px;
   }
+  .modal {
+    width: 288px;
+    min-height: 623px;
+  }
 }
