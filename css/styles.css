@@ -283,11 +283,9 @@ button {
   display: flex;
   gap: 24px;
 }
-.icons-list {
-  display: none;
-}
 
 /* Third-section */
+
 .third-section-container {
   padding: 0 28px;
 }
@@ -435,6 +433,10 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-img {
+  width: 288px;
+  height: 280px;
 }
 
 /* Footer */
@@ -889,6 +891,10 @@ button {
       ),
       url(../images/hero-section/hero-bg_tab.jpg);
   }
+  .portfolio-img {
+    width: 356px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -943,9 +949,7 @@ button {
   .second-section-text {
     font-weight: 400;
   }
-  .icons-list {
-    display: flex;
-  }
+
   .third-section {
     padding: 120px 0;
   }
@@ -1010,6 +1014,10 @@ button {
       ),
       url(../images/hero-section/hero-bg_desk.jpg);
   }
+  .portfolio-img {
+    width: 360px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
@@ -1043,5 +1051,10 @@ button {
   .modal {
     width: 288px;
     min-height: 623px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .icons-list {
+    display: none;
   }
 }
