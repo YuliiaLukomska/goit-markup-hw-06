@@ -47,6 +47,9 @@ button {
   margin: 0 auto;
   /* padding: 0 15px; */
   padding: 0 16px;
+
+  outline: 1px solid red;
+  outline-offset: -2px;
 }
 /* Header */
 .header {
@@ -907,7 +910,7 @@ button {
 
 /* Desktop screen */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -1017,7 +1020,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .first-section {
     background-image: linear-gradient(
         to bottom,
@@ -1028,7 +1031,7 @@ button {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1156.98px) {
   .footer-flex-cont {
     padding-left: 108px;
     padding-right: 108px;
@@ -1050,7 +1053,7 @@ button {
     min-height: 623px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157.98px) {
   .icons-list {
     display: none;
   }
