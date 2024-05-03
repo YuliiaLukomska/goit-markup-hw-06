@@ -59,6 +59,7 @@ button {
   position: sticky;
   top: -1px;
   background-color: #ffffff;
+  z-index: 999;
 }
 .header-inner {
   display: flex;
